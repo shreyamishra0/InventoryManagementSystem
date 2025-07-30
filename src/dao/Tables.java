@@ -21,7 +21,7 @@ public class Tables {
             con = ConnectionProvider.getCon();
             st = con.createStatement();
             //st.executeUpdate("create table appuser(appuser_pk int AUTO_INCREMENT primary key, userRole varchar(200), name varchar(200), mobileNumber varchar(200), email varchar(100), password varchar(200), address varchar(100), status varchar(200))");
-            //st.executeUpdate("insert into appuser(userRole, name,mobileNumber, email, password, address, status) values('SuperAdmin', 'Super Admin', '12345', 'testemail@gmail.com','test123','Nepal','Admin')");
+            //st.executeUpdate("insert into appuser(userRole, name,mobileNumber, email, password, address, status) values('SuperAdmin', 'Super Admin', '12345', 'admin@example.com','your_password','your_address','Active')");
             //st.executeUpdate("create table category(category_pk int AUTO_INCREMENT primary key, name varchar(200))");
             //st.executeUpdate("create table product(product_pk int AUTO_INCREMENT primary key, name varchar(200), quantity int, price int, description varchar(200), category_fk int)");
             //st.executeUpdate("create table customer(customer_pk int AUTO_INCREMENT primary key, name varchar(200), mobileNumber varchar(200), email varchar(200))");
