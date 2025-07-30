@@ -14,8 +14,11 @@ public class ConnectionProvider {
     public static  Connection getCon(){
         try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/inventory?useSSL=false", "root", "");
-        return con;
+        Connection con = DriverManager.getConnection(
+            "jdbc:mysql://localhost:3306/inventory_db?useSSL=false", 
+            "your_username", 
+            "your_password"
+        );        return con;
         }
         catch (Exception e){
             System.out.println(e);
